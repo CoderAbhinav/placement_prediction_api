@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from models.user_profile_model import UserProfileModel, PredictionResponse
 from services.prediction_model_service import PredictionModelService
 
-app = FastAPI()
+app = FastAPI(title="Placement Prediction API")
 
 predictionService : PredictionModelService = None
 
